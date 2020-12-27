@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <title>실습</title>
+</head>
+<body>
+    <h1 style="text-align:center;">웹 프로그래밍 실습</h1>
+    <div style="background-color: cornflowerblue;"></div>
+    <div>
+        <fieldset>
+            <legend>회원 정보</legend>
+                
+                이름 : <input type="text" name="name"><br>
+                생년월일 : <input type="text" name="birthday"><br><br>
+                
+                아이디 : <input type="text" name="id"><br>
+                패스워드 : <input type="password" name="password"><br><br>
+
+                좋아하는 색깔 : <input type="color" name="favorite_color" value="#0000ff"><br><br>
+                
+                <input type="submit" value="제출">
+                <input type="reset" value="초기화">
+                
+        </fieldset>
+    </div>
+    <br>
+    <div>
+        <fieldset>
+            <legend>음악</legend>
+                <input list="music" name="music">
+                <datalist id="music">
+                    <option value="POP">
+                    <option value="Jazz">
+                    <option value="R&B/Soul">
+                    <option value="Rock">
+                    <option value="Blues">
+                </datalist><br><br>
+                볼륨 조절 : <input type="range" name="volume" min="0" max="100"><br>
+        </fieldset>
+        <br><br>
+        <textarea name="message" rows="10" cols="50">웹 프로그래밍</textarea><br><br>
+    </div>
+</body>
+</html>
