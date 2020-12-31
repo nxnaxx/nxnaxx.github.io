@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고정 바</title>
+
+    <style>
+        *{padding: 0; margin: 0;}
+        body {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .top_bar {
+            background: orange;
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            height: 50px;
+        }
+
+        .left_bar {
+            position: fixed;
+            top: 50px; left: 0; bottom: 0;
+            width: 50px;
+            background: silver;
+        }
+
+        .container {
+            height: 800ox;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top_bar"></div>
+    <div class="left_bar"></div>
+    <div class="container">
+        <p>Web Programming</p>
+        <p>HTML/CSS</p>
+        <P>JavaScript</P>
+    </div>
+</body>
+</html>
