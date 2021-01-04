@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <title>예제 4-1, 4-2</title>
+    <style>
+        .inline strong {
+            display: inline;
+            color: blue;
+            border: 1px dotted silver;
+            margin: 2px;
+        }
+        .block strong {
+            display: block;
+            color: blue;
+            border: 1px dotted silver;
+        }
+        .inline li {
+            display: inline;
+            border: 1px solid silver;
+            background-color: yellow;
+            color: blue;
+            margin: 2px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h3>[인라인 형식]</h3>
+    <p class="inline">
+        Web Programming
+        <strong>HTML</strong><strong>CSS</strong><strong>JavaScript</strong>
+    </p>
+    <h3>[블록 형식으로 변환]</h3>
+    <P class="block">
+        Web Programming
+        <strong>HTML</strong><strong>CSS</strong><strong>JavaScript</strong>
+    </P>
+    <hr>
+    <h3>[블록 형식]</h3>
+    <ul class="block">
+        <li><a href="http://www.google.com">Google</a></li>
+        <li><a href="http://www.apple.com">Apple</a></li>
+        <li><a href="http://www.oracle.com">Oracle</a></li>
+    </ul>
+    <h3>[인라인 형식으로 변환]</h3>
+    <ul class="inline">
+        <li><a href="http://www.google.com">Google</a></li>
+        <li><a href="http://www.apple.com">Apple</a></li>
+        <li><a href="http://www.oracle.com">Oracle</a></li>
+    </ul>
+</body>
+</html>
