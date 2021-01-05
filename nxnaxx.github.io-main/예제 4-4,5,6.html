@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+    <title>float 속성</title>
+    <style>
+        .box01 {
+            float: left;
+            border: 3px solid green;
+            height: 50px; width: 100px;
+            margin: 10px;
+        }
+        .box02 {
+            border: 1px solid red;
+            background: silver;
+            height: 80px;
+        }
+        .box03 {
+            float: left;
+            border: 3px solid green;
+            height: 50px; width: 100px;
+            margin: 10px;
+        }
+        .box04 {
+            clear: left;
+            border: 1px solid red;
+            background: silver;
+            height: 80px;
+        }
+        .div_img {
+            border: 3px solid green;
+            background: silver;
+        }
+        .img {
+            float: right;
+        }
+        .auto {
+            overflow: auto;
+        }
+        .fix {
+            border: 3px solid silver;
+            overflow: auto;
+        }
+        nav {
+            float: left;
+            width: 200px;
+            border: 3px solid black;
+        }
+        section {
+            margin-left: 205px;
+            border: 3px solid yellow;
+        }
+    </style>
+</head>
+<body>
+    예제 4-4
+    <h1>레이아웃 : 위치 설정</h1>
+    <h2>float 속성 사용</h2>
+    <div class="box01">div1</div>
+    <div class="box02">div2</div>
+    <h2>clear 속성 사용</h2>
+    <div class="box03">div3</div>
+    <div class="box04">div4</div>
+    <hr>
+    예제 4-5
+    <p>이미지가 박스 영역 벗어남</p>
+    <div class="div_img">
+        <img class="img" src="./img/bubble.png" alt="image" height="150">
+        이미지 오른쪽 정렬 : 박스 영역 벗어남
+    </div>
+    <p>overflow: auto; 속성</p>
+    <div class="div_img auto">
+        <img class="img" src="./img/bubble.png" alt="image" height="150">
+        이미지가 박스 영역을 벗어날 경우에는 overflow 속성을 auto로 설정하여 해결.
+    </div>
+    <hr>
+    예제 4-6
+    <div class="fix">
+        <nav>
+            <span>목차</span>
+            <ul>
+                <li><a href="http://www.naver.com">Naver</a></li>
+                <li><a href="http://www.google.com">Google</a></li>
+                <li><a href="http://www.apple.com">Apple</a></li>
+            </ul>
+        </nav>
+        <section>
+            <span>section 1</span>
+            <p>float 속성과 시맨틱 문서 구조</p>
+        </section>
+        <section>
+            <span>section 2</span>
+            <p>float 속성과 시맨틱 문서 구조</p>
+        </section>
+    </div>
+</body>
+</html>
