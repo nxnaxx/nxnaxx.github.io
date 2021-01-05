@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <title>z-index 속성2</title>
+    <style>
+        div {
+            position: absolute; border-style: solid;
+        }
+        #green {
+            top: 50px; left: 120px;
+            width: 60px; height: 60px;
+            border-width: 8px; border-color: #00cc00;
+            z-index: 1;
+        }
+        #red {
+            top: 90px; left: 70px;
+            width: 70px; height: 70px;
+            border-width: 8px; border-color: red;
+            z-index: 2;
+        }
+        #yellow {
+            top: 120px; left: 85px;
+            width: 100px; height: 100px;
+            border-width: 10px; border-color: #ffe05e;
+            z-index: 3;
+        }
+        #blue {
+            top: 40px; left: 150px;
+            width: 110px; height: 110px;
+            border-width: 13px; border-color: #0099ff;
+            z-index: 4;
+        }
+        #text {
+            top: 190px; left: 300px;
+            width: 500px; height: 50px;
+            font-family: Tahoma black; font-size: 40px;
+            letter-spacing: -4; border: 0;
+            z-index: 5;
+        }
+    </style>
+</head>
+<body>
+    <div id="green"></div>
+    <div id="red"></div>
+    <div id="yellow"></div>
+    <div id="blue"><img src="./img/bubble.png" height="200"></div>
+    <div id="text">bubble boggle</div>
+</body>
+</html>

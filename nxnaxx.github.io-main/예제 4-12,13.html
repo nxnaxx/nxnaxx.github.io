@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <title>z-index 속성</title>
+    <style>
+        .box1 {
+            position: absolute;
+            background: silver;
+            z-index: 3;
+            width: 100px; height: 100px;
+            top: 0; left: 0;
+        }
+        .box2 {
+            top: 30px; left: 30px;
+            width: 100px; height: 100px;
+            position: absolute;
+            background: yellow;
+            z-index: 2;
+        }
+        .box3 {
+            top: 60px; left: 60px;
+            width: 100px; height: 100px;
+            background: green;
+            position: absolute;
+            z-index: 1;
+        }
+        .div2 {
+            position: absolute;
+            width: 300px; height: 200px;
+            font-size: 25pt; border: 2px solid;
+        }
+        .divbox01 {
+            left: 50%; top: 50%; background: silver; z-index: -1;
+        }
+        .divbox02 {
+            left: 100px; top: 100px; background: skyblue; z-index: 0;
+        }
+        .divbox03 {
+            left: 180px; top: 250px; background: hotpink; z-index: 1;
+        }
+        .divbox04 {
+            left: 290px; top: 140px; background: yellowgreen; z-index: 2;
+        }
+        p {
+            position: absolute;
+            width: 100px; height: 100px;
+            background: orange; color: white;
+            font-size: 15pt; border: 1px solid black;
+            text-align: center; margin: 0px;
+        }
+        .pbox01 {
+            top: 0px; left: 0px;
+        }
+        .pbox02 {
+            top: 0px; right: 0px;
+        }
+        .pbox03 {
+            bottom: 0px; left: 0px;
+        }
+        .pbox04 {
+            bottom: 0px; right: 0px;
+        }
+    </style>
+</head>
+<body>
+    예제 4-12,13
+    <div class="box1">box #01</div>
+    <div class="box2">box #02</div>
+    <div class="box3">box #03</div>
+    <div class="div2 divbox01">divBox01<br>z-index:-1</div>
+    <div class="div2 divbox02">divBox02<br>z-index:0</div>
+    <div class="div2 divbox03">divBox03<br>z-index:1</div>
+    <div class="div2 divbox04">divBox04<br>z-index:2</div>
+    <p class="pbox01">top:0<br>left:0</p>
+    <p class="pbox02">top:0<br>right:0</p>
+    <p class="pbox03">bottom:0<br>left:0</p>
+    <p class="pbox04">bottom:0<br>right:0</p>
+</body>
+</html>
