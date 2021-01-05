@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <title>position 속성_2</title>
+    <style>
+        p {
+            font-weight: bold;
+            font-size: 12pt;
+            width: 300px; height: 50px;
+        }
+        .box {
+            background: yellow;
+        }
+        .fixed_box {
+            background: silver;
+            position: fixed;
+            top: 5px; right: 5px;
+        }
+        div {
+            padding-bottom: 1000px;
+        }
+        .sticky_box {
+            position: sticky;
+            top: 0;
+            background: rgb(137, 207, 137);
+            border: 2px solid green;
+            padding: 5px; width: 500px;
+        }
+    </style>
+</head>
+<body>
+    예제 4-10
+    <h1>레이아웃 : 위치 설정</h1>
+    <p class="box">기본 위치 설정 박스 #01</p>
+    <p class="box">기본 위치 설정 박스 #02</p>
+    <p class="box">기본 위치 설정 박스 #03</p>
+    <p class="box">기본 위치 설정 박스 #04</p>
+    <p class="box">기본 위치 설정 박스 #05</p>
+    <p class="fixed_box">고정 위치 설정 박스<br>오른쪽 스크롤 : 위아래로 이동
+    </p><hr>
+    예제 4-11
+    <h1>레이아웃 : 위치 설정</h1>
+    <p class="sticky_box">고정 위치 설정 박스<br>오른쪽 스크롤 : 위아래로 이동</p>
+    <div>
+        <p class="box">기본 위치 설정 박스 #01</p>
+        <p class="box">기본 위치 설정 박스 #02</p>
+        <p class="box">기본 위치 설정 박스 #03</p>
+        <p class="box">기본 위치 설정 박스 #04</p>
+        <p class="box">기본 위치 설정 박스 #05</p>
+    </div>
+</body>
+</html>
