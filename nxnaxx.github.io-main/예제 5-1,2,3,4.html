@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+    <title>페이지 레이아웃</title>
+    <style>
+        * {
+            margin: 0; padding: 0;
+        }
+        body {
+            width: 800px; margin: 0 auto;
+            background: silver;
+        }
+        .container {
+            height: 250px; width: 500px;
+            background: orange;
+            position: absolute;
+            left: 50%; top: 80%;
+            margin-left: -250px; margin-top: -125px;
+        }
+        #container {
+            overflow: hidden;
+        }
+        .item {
+            float: left;
+            width: 100px;
+            background: silver; border: 1px solid black;
+            padding: 10px; margin: 0 3px;
+        }
+        .top_bar {
+            background: orange;
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            height: 50px;
+        }
+        .left_bar {
+            background: black;
+            position: fixed;
+            width: 50px;
+            top: 50px; left: 0; bottom: 0;
+        }
+        .content {
+            height: 800px;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <br><br><br>
+    예제 5-1,2,3,4
+    <h1>Web Programming</h1><br>
+    <h2>- Clickseo -</h2><br>
+    <p>HTML/CSS</p>
+    <p>JavaScript</p>
+    <div class="container">
+        <h1>절대 좌표<br>중앙 정렬</h1>
+    </div>
+    <div id="container">
+        <div class="item">Menu #01</div>
+        <div class="item">Menu #02</div>
+        <div class="item">Menu #03</div>
+        <div class="item">Menu #04</div>
+    </div>
+    <div class="top_bar"></div>
+    <div class="left_bar"></div>
+    <div class="content">
+        <p>Web Programming</p>
+        <p>HTML/CSS</p>
+        <p>JavaScript</p>
+    </div>
+</body>
+</html>
