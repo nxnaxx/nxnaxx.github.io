@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <title>HTML 요소 생성 및 추가</title>
+</head>
+<body>
+    <div id="div1">
+        <p id="p1">Hellow World!!!</p>
+        <p id="p2">Hellow World!!!</p>
+    </div>
+    <script>
+        var newElement=document.createElement("p");
+        var newTextNode=document.createTextNode("Hi~ Clickseo");
+        newElement.appendChild(newTextNode);
+
+        var element=document.getElementById("div1");
+        element.appendChild(newElement);
+    </script>
+</body>
+</html>
