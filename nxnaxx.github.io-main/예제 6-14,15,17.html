@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title>반복문 for</title>
+</head>
+<body>
+    <script>
+        var i,j;
+        for(i=1; i<=9;i++){
+            document.write("<br>"+"<b>---["+i+"단]---</b>"+"<br>");
+            for(j=1;j<=9;j++){
+                document.write(i+"*"+j+"="+(i*j)+"<br><br>");
+            }
+        }
+        
+        var num=1;
+        var sum=0;
+        while(num<=100){
+            sum+=num;
+            num++;
+        }
+        document.write("1~100까지 합 : <b>"+sum+"</b><br><br>");
+
+        var k,l;
+        outloop:
+        for(k=1;k<=9;k++){
+            if(k%2==1) continue;
+
+            inloop:
+            for(l=1;l<=9;l++){
+                if(l>k) break;
+                document.write(k+"*"+l+"="+(k*l)+"<br>")
+            }
+        }
+    </script>
+</body>
+</html>
