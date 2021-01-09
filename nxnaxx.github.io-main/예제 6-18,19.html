@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>함수</title>
+    <script>
+        function printMsg(msg){
+            document.write("기본 함수 : "+msg+"<br>");
+        }
+        var printMsg=function(msg){
+            document.write("익명 함수 : "+msg+"<br>");
+        }
+        printMsg("함수 호출"+"<br>");
+
+        function add(a,b){
+            return a+b;
+        }
+        var res=add(5,5);
+        document.write("add(5,5):"+res+"<br>");
+        document.write("add(15,25):"+add(15,25)+"<br>");
+
+        var addSum=add;
+        var addRes=add;
+
+        document.write("addSum(10,20):"+addSum(10,20)+"<br>");
+        document.write("addRes(30,40):"+addRes(30,40)+"<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
