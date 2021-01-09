@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>전역 변수와 지역 변수</title>
+    <script>
+        var globalValue;
+        function Func(){
+            var localValue;
+            localValue=10;
+            document.write("localValue :"+localValue+"<br>");
+
+            globalValueLocal;
+            document.write("globalValue :"+globalValue+"<br>");
+            document.write("globalValueLocal :"+globalValueLocal+"<br><br>");
+        }
+        globalValueLocal=100;
+
+        Func();
+
+        document.write("globalValue :"+globalValue+"<br>");
+        document.write("globalValueLocal :"+globalValueLocal+"<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
