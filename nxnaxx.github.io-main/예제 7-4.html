@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title>생성자 함수와 객체 생성</title>
+</head>
+<body>
+    <p id="carname"></p>
+    <p id="carcolor"></p>
+    <p id="carspeed"></p>
+    <script>
+        function Car(name, color, speed){
+            this.name=name;
+            this.color=color;
+            this.speed=speed;
+
+            this.speedup=function(){
+                return this.speed+10;
+            };
+            this.speeddown=function(){
+                return this.speed-10;
+            };
+        }
+        var myCar=new Car('myCar','black',100);
+
+        var carName=document.getElementById("carname");
+        carName.textContent='자동차 이름 : '+myCar.name;
+
+        var colorName=document.getElementById("carcolor");
+        colorName.textContent='자동차 색상 : '+myCar.color;
+
+        var carSpeed=document.getElementById("carspeed");
+        carSpeed.textContent='자동차 속도 : '+myCar.speedup();
+    </script>
+</body>
+</html>
