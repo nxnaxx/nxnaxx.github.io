@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+    <title>3초 공지사항</title>
+</head>
+<body onload="setTimeout('openWin()',2000)">
+    <script>
+        var remote;
+        function openWin(){
+            win=window.open("event.html","","height=385, width=250, left=100, top=100");
+            setTimeout("closewin()",3000);
+        }
+        function closewin(){
+            win.close();
+        }
+    </script>
+</body>
+</html>
