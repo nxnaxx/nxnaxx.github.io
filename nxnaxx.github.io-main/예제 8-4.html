@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <title>지정된 시간 후 사이트 이동</title>
+</head>
+<body onload="addNum()">
+    <form name="formType">
+        <input type="text" name="num" size=2>초 뒤에 naver.com 으로 이동합니다.
+    </form>
+    <script>
+        var sec=10;
+        function addNum(){
+            if(sec==0)
+            location.href="http://www.naver.com";
+            formType.num.value=sec;
+            sec=sec-1;
+            setTimeout("addNum()",1000)
+        }
+    </script>
+</body>
+</html>
