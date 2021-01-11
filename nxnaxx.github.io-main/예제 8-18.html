@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div onmousedown="mouseDown(this)" onmouseup="mouseUp(this)"
+        style="background-color: silver; height: 20px; width: 120px; padding: 40px;">Click</div>
+
+    <script>
+        function mouseDown(obj){
+            obj.style.backgroundColor="yellow";
+            obj.innerHTML="Hello";
+        }
+        function mouseUp(obj){
+            obj.style.backgroundColor="green";
+            obj.innerHTML="Thank you";
+        }
+    </script>
+</body>
+</html>
