@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <title>jquery 기본 선택자</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("*").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>Hello World!!!</p>
+    <h1>Hello</h1>
+    <p id="test">id 선택자</p>
+    <p class="test">class 선택자</p>
+    <button>Click</button>
+</body>
+</html>
