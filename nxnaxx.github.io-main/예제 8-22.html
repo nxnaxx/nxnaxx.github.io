@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <title>replaceChild 메소드</title>
+</head>
+<body>
+    <div id="div1">
+        <p id="p1">Hello World!!!</p>
+        <p id="p2">Hello World!!!</p>
+    </div>
+    <script>
+        var newElement=document.createElement("p");
+        var newTextNode=document.createTextNode("Hello");
+        newElement.appendChild(newTextNode);
+
+        var parent=document.getElementById("div1");
+        var child=document.getElementById("p1");
+        parent.replaceChild(newElement, child);
+    </script>
+</body>
+</html>
