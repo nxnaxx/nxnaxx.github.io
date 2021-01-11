@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>onclick, onchange, onmouseover</title>
+</head>
+<body>
+    <p>예제 8-15 텍스트 변경</p>
+    <h1 onclick="changeText(this)">Click on this text!!!</h1><br>
+    <p>예제 8-16 대소문자 변경</p>
+    Enter your name : <input type="text" id="myName" onchange="myFunction()"><br><br>
+    <p>예제 8-17 onmouseover, onmouseout</p>
+    <div onmouseover="mouseOver(this)" onmouseout="mouseOut(this)"
+        style="background-color: silver; height: 20px; width: 120px; padding: 40px;">
+        Mouse Over</div>
+    <script>
+        function changeText(id){
+            id.innerHTML="Hello~"
+        }
+        function myFunction(){
+            var str=document.getElementById("myName");
+            str.value=str.value.toUpperCase();
+        }
+        function mouseOver(obj){
+            obj.innerHTML="Hello"
+        }
+        function mouseOut(obj){
+            obj.innerHTML="Mouse Over"
+        }
+    </script>
+</body>
+</html>
