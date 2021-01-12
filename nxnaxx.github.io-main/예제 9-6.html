@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title>jquery 필터 선택자 selected</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            setTimeout(function() {
+                var value=$('select>option:selected').val();
+                alert(value);
+            }, 5000);
+        });
+    </script>
+</head>
+<body>
+    <select>
+        <option>컴퓨터정보공학부</option>
+        <option>소프트웨어학부</option>
+        <option>정보융합학부</option>
+    </select>
+</body>
+</html>
