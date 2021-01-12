@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title>이벤트 제거-off 메소드</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('h1').click(function(){
+                $(this).html('CLICK');
+                alert('이벤트가 발생했습니다.');
+
+                $(this).off();
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>HEADER-0</h1>
+    <h1>HEADER-1</h1>
+    <h1>HEADER-2</h1>
+</body>
+</html>
