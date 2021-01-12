@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>키보드 이벤트</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('textarea').keyup(function(){
+                var inputLength=$(this).val().length;
+                var remain=150-inputLength;
+
+                $('h1').html(remain);
+
+                if(remain>=0){
+                    $('h1').css('color','blank');
+                } else{
+                    $('h1').css('color','red');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="outer">
+        <p>지금 내 생각을...</p>
+        <h1>150</h1>
+        <textarea cols="70" rows="5"></textarea>
+    </div>
+</body>
+</html>
