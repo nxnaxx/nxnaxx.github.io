@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>마우스 이벤트-on 메소드</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("p").on({
+                mouseenter:function(){
+                    $(this).css("background-color","lightgray");
+                },
+                mouseleave:function(){
+                    $(this).css("background-color","lightblue");
+                },
+                click:function(){
+                    $(this).css("background-color","yellow");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>HELLO</p>
+</body>
+</html>
