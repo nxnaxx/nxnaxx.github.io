@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <title>callback 함수</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#hide').click(function(){
+                $('div').hide("slow",function(){
+                    alert("The paragraph is now hidden")
+                });
+            });
+            $('#show').click(function(){
+                $('div').show("slow",function(){
+                    alert("The paragraph is now shown")
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <h1>Hello</h1>
+        <p>"자유로운 영혼"</p>
+    </div>
+    <button id="hide">Click hide</button>
+    <button id="show">Click show</button>
+</body>
+</html>
