@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <title>이벤트 강제 발생</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('h1').click(function(event){
+                $(this).html(function(index, html){
+                    return html+'#';
+                });
+            });
+            setInterval(function(){
+                $('h1').last().trigger('click');
+            },1000);
+        });
+    </script>
+</head>
+<body>
+    <h1>Start-Click:</h1>
+    <h1>Start-Click&Interval:</h1>
+</body>
+</html>
