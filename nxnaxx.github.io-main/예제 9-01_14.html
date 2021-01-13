@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <title>hide, show, toggle</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#hide').click(function(){
+                $('div').hide();
+            });
+            $('#show').click(function(){
+                $('div').show();
+            });
+            $('#toggle').click(function(){
+                $('div').toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <h1>Hello</h1>
+        <p>"자유로운 영혼"</p>
+    </div>
+    <button id="hide">Click hide</button>
+    <button id="show">Click show</button>
+    <button id="toggle">Click toggle</button>
+</body>
+</html>
