@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>매개변수 context</title>
+    <style>
+        * {
+            margin: 0px; padding: 0px;
+        }
+        div {
+            border: 3px solid black;
+            border-radius: 10px;
+            margin: 5px; padding: 3px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('div').click(function(){
+                var header=$('h1',this).text();
+                var paragraph=$('p',this).text();
+                alert(header+'\n'+paragraph);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div><h1>Header 1</h1><p>Paragraph</p></div>
+    <div><h1>Header 2</h1><p>paragraph</p></div>
+    <div><h1>Header 3</h1><p>paragraph</p></div>
+</body>
+</html>
