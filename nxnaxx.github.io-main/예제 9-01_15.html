@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title>slidedown, slideup, slidetoggle</title>
+    <style>
+        #panel {
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+            padding: 50px; display: none;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#slideDown').click(function(){
+                $('div').slideDown();
+            });
+            $('#slideUp').click(function(){
+                $('div').slideUp();
+            });
+            $('#slideToggle').click(function(){
+                $('div').slideToggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="panel">
+        <h1>Hello</h1>
+        <p>"자유로운 영혼"</p>
+    </div>
+    <button id="slideDown">Click slideDown</button>
+    <button id="slideUp">Click slideUp</button>
+    <button id="slideToggle">Click slideToggle</button>
+</body>
+</html>
